@@ -1,0 +1,15 @@
+// import
+@use "./partials/variables";
+@use "./partials/reset";
+@use "./partials/mixin";
+@use "./partials/base";
+@use "./partials/fonts";
+
+
+// coponents
+@use "./components/header";
+@use "./components/footer";
+
+// pages 
+@use "./pages/home/hero";
+@use "./pages/products/best_seller";

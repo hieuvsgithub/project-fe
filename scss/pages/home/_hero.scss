@@ -1,0 +1,223 @@
+@use "../../partials/fonts";
+@use "../../partials/mixin";
+
+
+:root  {
+    --content : #2c2c2c;
+}
+.hero {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    .wrapper-hero {
+        position: relative;
+        height: 100%;
+        display: block;
+        .container {
+            .row {
+                .col-6 {
+                    display: flex;
+                    align-items: center;
+                    height: 700px;
+                    // position: absolute;
+                    .header-content-hero {
+                        padding-top: 0;
+                        h2 {
+                            color:var(--content);
+                            line-height: 50px;
+                        }
+                        h3 {
+                            font-size: 43.333px;
+                            font-weight: 800;
+                            text-transform: uppercase;
+                            width: 370px;
+                            margin-bottom: 27.67px;
+                        }
+                        p {
+                            width: 449.167px;
+                            font-size: 16px;
+                            line-height: 20.417px;
+                            font-weight: 400;
+                        }
+                    }
+                    .trademark {
+                        padding-top: 0;
+                        background: #ddffca;
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        right: 0;
+                        width: 50%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        .wrapper-trademark  {
+                            display: flex;
+                            height: 100%;
+                            display: inline-block;
+                            position: relative;
+                            width: 75%;
+                            img {
+                                width: 680px;
+                                height: auto;
+                                position: absolute;
+                                top: 20px;
+                                left: -180px;
+                            }
+                            h1 {
+                                display: inline-block;
+                                font-size: 166.667px;
+                                transform: rotate(90deg);
+                                width: 676.141px;
+                                font-weight: 800;
+                                position: absolute;
+                                top: 235px;
+                                left: 189.67px;
+                                opacity: 0.15;
+                            }
+                        }
+                    }
+                    
+                }
+                
+            }
+           
+        }
+        
+    }
+}
+
+@include mixin.big-pc-device {
+    .hero {
+        .wrapper-hero {
+            .container {
+                .row {
+                    .col-6 {
+                        height: 600px;
+                        &:nth-child(2) {
+                            padding-right: 0;
+                        }
+                        .header-content-hero {
+                            h2 {
+                                font-size: 30px;
+                            }
+                            h3 {
+                                font-size: 40px;
+                                width: 350px;
+                            }
+                        }
+                        .trademark {
+                            .wrapper-trademark {
+                                img {
+                                    width: 560px;
+                                    top: 20px;
+                                    left: -120px;
+                                }
+                                h1 {
+                                    font-size: 140px;
+                                    top: 165px;
+                                    left: 210px;
+                                    width: 500px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include mixin.pc-device {
+    .hero {
+        .wrapper-hero {
+            .container {
+                .row {
+                    .col-6 {
+                        height: 500px;
+                        
+                        .trademark {
+                            position: static;
+                            width: 100%;
+                            border-radius: 10px;        
+                            .wrapper-trademark {
+                                img {
+                                    width: 450px;
+                                    top: 20px;
+                                    left: -120px;
+                                }
+                                h1 {
+                                    font-size: 90px;
+                                    top: 250px;
+                                    left: 120px;
+                                    width: 500px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include mixin.miniPc-device {
+    .hero {
+
+        .wrapper-hero {
+
+            .container {
+                .row {
+                    .col-md-12 {
+                        height: 400px;
+                        display: flex;
+                        justify-content: center;
+                        position: relative;
+                        
+                        .header-content-hero {
+                            height: auto;
+                            text-align: center;
+                            width: 700px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+
+                            h3 {
+                                display: block;
+                                width: 100%;
+                            }
+
+                        }
+                        .trademark {
+                            position: static;
+                            width: 100%;
+                            border-radius: 10px;
+                            .wrapper-trademark {
+                                position: static;
+                                display: flex;
+                                justify-content: center;
+                                
+                                img {
+                                    width: 400px;
+                                    position: static;
+                                }
+                                h1 {
+                                    // position: static;
+                                    font-size: 90px;
+                                    top: 100px;
+                                    left: 240px;
+                                    width: 300px;
+                                    height: 200px;
+                                    // width: 500px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
