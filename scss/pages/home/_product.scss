@@ -1,0 +1,182 @@
+@use "../../partials/fonts";
+@use "../../partials/mixin";
+
+.products {
+    .container {
+        .row {
+            .col-12 {
+                .products-header {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    h2 {
+                        
+                        display: inline-block;
+                        font-size: 31px;
+                    }
+                }
+                .products-item {
+                    .row {
+                        .col-4 {
+                            position: relative;
+                            .item-background-pink {
+                                padding: 20px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                text-align: center;
+                                &::before {
+                                    content: "";
+                                    width: 220px;
+                                    height: 220px;
+                                    background: #ffba94;
+                                    border-radius: 50%;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 65px;
+                                    z-index: -1;
+                                }
+                                img {
+                                    width: 200px;
+                                    margin: 60px auto 20px;
+                                }
+                                h3 {
+                                    font-size: 23px;
+                                    font-weight: 700;
+                                    margin-bottom: 10px;
+                                    line-height: 21px;
+                                }
+                                .quantity {
+                                    color: #656565;
+                                    font-size: 16px;
+                                    margin-bottom: 10px;
+                                }
+                                .price {
+                                    font-size: 16px;
+                                    color: #2c2c2c;
+                                    margin-bottom: 20px;
+                                    span {
+                                        font-size: 23px;
+                                        font-weight: 600;
+                                    }
+                                }
+                                .btn-add-to-cart {
+                                    padding: 10px;
+                                    background: #46b20f;
+                                    border-radius: 6px;
+                                    color: #fff;
+                                }
+                            }
+                            .item-background-green {
+                                padding: 20px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                text-align: center;
+                                &::before {
+                                    content: "";
+                                    width: 220px;
+                                    height: 220px;
+                                    background: #c5ffa8;
+                                    border-radius: 50%;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 65px;
+                                    z-index: -1;
+                                }
+                                img {
+                                    width: 200px;
+                                    margin: 60px auto 20px;
+                                }
+                                h3 {
+                                    font-size: 23px;
+                                    font-weight: 700;
+                                    margin-bottom: 10px;
+                                    line-height: 21px;
+                                }
+                                .quantity {
+                                    color: #656565;
+                                    font-size: 16px;
+                                    margin-bottom: 10px;
+                                }
+                                .price {
+                                    font-size: 16px;
+                                    color: #2c2c2c;
+                                    margin-bottom: 20px;
+                                    span {
+                                        font-size: 23px;
+                                        font-weight: 600;
+                                    }
+                                }
+                                .btn-add-to-cart {
+                                    padding: 10px;
+                                    background: #46b20f;
+                                    border-radius: 6px;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include mixin.miniPc-device {
+    .products {
+        .container {
+            .row {
+                .col-12 {
+                    .products-item {
+                        .row {
+                            .col-4 {
+                                .item-background-pink {
+                                    &::before {
+                                        left: 50px;
+                                    }
+                                }
+                                .item-background-green {
+                                    &::before {
+                                        left: 50px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include mixin.tablet-device {
+    .products {
+        .container {
+            .row {
+                .col-12 {
+                    .products-item {
+                        .row {
+                            .col-4 {
+                                .item-background-pink {
+                                    &::before {
+                                        content: "";
+                                        display: none;
+                                    }
+                                }
+                                .item-background-green {
+                                    &::before {
+                                        content: "";
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

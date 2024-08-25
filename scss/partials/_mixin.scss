@@ -1,8 +1,4 @@
-@mixin big-pc-device {
-  @media screen and (max-width: 1599.98px) {
-    @content;
-  }
-}
+
 @mixin pc-device {
     @media screen and (max-width: 1199.98px) {
       @content;

@@ -1,0 +1,144 @@
+@use "../../partials/fonts";
+@use "../../partials/mixin"; 
+
+.achievements {
+    .container {
+        .row {
+            .col-12 {
+                display: flex;
+                justify-content: center;
+                position: relative;
+                .achievement-header {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    max-width: 650px;
+                    text-align: center;
+
+                    h2 {
+                        font-size: 31px;
+                        margin-bottom: 25px;
+                    }
+                }
+                .achievement-item {
+                    width: 100%;
+                    &::before {
+                        content: "";
+                        width: 180px;
+                        height: 180px;
+                        border-radius: 50%;
+                        background-color: #ddffca;
+                        position: absolute;
+                        z-index: -1;
+                        top: -10px;
+                        left: 15px;
+                    }
+                    &::after {
+                        content: "";
+                        width: 180px;
+                        height: 180px;
+                        border-radius: 50%;
+                        background-color: #ffd5bd;
+                        position: absolute;
+                        z-index: -1;
+                        bottom: -20px;
+                        right: 10px;
+                    }
+                    .row {
+                        padding-top: 40px;
+                        display: flex;
+                        align-items: center;
+                        
+                        .col-3 {
+                            .item {
+                                display: flex;
+                                flex-direction: column;
+                                background: #fff;
+                                box-shadow: -5.833px 8.333px 72.5px 0px rgba(54, 54, 54, 0.12);
+                                padding: 30px 20px 40px 20px ;
+                                img {
+                                    width: 50px;
+                                    background-color: #fff0e7;
+                                    border-radius: 3.333px;
+                                    padding: 5px;
+                                    margin-bottom: 20px;
+                                }
+                                span {
+                                    font-size: 40px;
+                                    color: #2c2c2c;
+                                    font-weight: 800;
+                                    margin-bottom: 25px;
+                                }
+                                p {
+                                    font-size: 20px;
+                                    line-height: 30px;
+                                }
+                            }
+                        }
+                        .col-4 {
+                            .item {
+                                display: flex;
+                                flex-direction: column;
+                                background: #fff;
+                                box-shadow: -5.833px 8.333px 72.5px 0px rgba(54, 54, 54, 0.12);
+                                padding: 60px 20px 100px 20px;
+                            }
+                            img {
+                                width: 50px;
+                                background-color: #f2ffec;
+                                border-radius: 3.333px;
+                                padding: 5px;
+                                margin-bottom: 20px;
+                            }
+                            span {
+                                font-size: 40px;
+                                color: #2c2c2c;
+                                font-weight: 800;
+                                margin-bottom: 25px;
+                            }
+                            p {
+                                font-size: 20px;
+                                line-height: 30px;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+@include mixin.tablet-device {
+    .achievements {
+        .container {
+            .row {
+                .col-12 {
+                    margin: 0px 5px;
+                    .achievement-item {
+                        &::before {
+                            content: "";
+                            display: none;
+                        }
+                        &::after {
+                            content: "";
+                            display: none;
+                        }
+                        .row {
+                            .col-md-12 {
+                                .item {
+                                    padding: 30px;
+                                    margin: 0 5px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

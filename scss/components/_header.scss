@@ -124,57 +124,59 @@
 
 @include mixin.miniPc-device {
     .header {
-        .nav {
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            background: #fff;
-            width: 20%;
-            padding: 20px;
-            z-index: 99;
-            transform: translateX(-100%);
-            transition: transform 0.5s ease;
-            .nav-logo {
-                display: block;
-
-                a {
-                    display: inline-block;
-                    width: 80px;
-                    height: 55px;
-                    img {
-                        width: 100%;
-
+        .wrapper-header {
+            .nav {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                background: #fff;
+                width: 20%;
+                padding: 20px;
+                z-index: 99;
+                transform: translateX(-100%);
+                transition: transform 0.5s ease;
+                .nav-logo {
+                    display: block;
+    
+                    a {
+                        display: inline-block;
+                        width: 80px;
+                        height: 55px;
+                        img {
+                            width: 100%;
+    
+                        }
+                    }
+                }
+    
+                ul {
+                    flex-direction: column;
+                    margin-top: 20px;
+                }
+            }
+            .coaing {
+                display: none;
+                position: fixed;
+                inset: 0;
+                background: #000;
+                opacity: 0.3;
+                z-index: 1;
+            }
+            .btn-navbar {
+                .btn-nav {
+                    display: block;
+                    i {
+                        padding: 5px;
                     }
                 }
             }
-
-            ul {
-                flex-direction: column;
-                margin-top: 20px;
+            .check-bar:checked ~ nav  {
+                transform: translateX(0%);
             }
-        }
-        .coaing {
-            display: none;
-            position: fixed;
-            inset: 0;
-            background: #000;
-            opacity: 0.3;
-            z-index: 1;
-        }
-        .btn-navbar {
-            .btn-nav {
+            .check-bar:checked ~ .coaing {
                 display: block;
-                i {
-                    padding: 5px;
-                }
             }
-        }
-        .check-bar:checked ~ nav  {
-            transform: translateX(0%);
-        }
-        .check-bar:checked ~ .coaing {
-            display: block;
         }
     }
 }

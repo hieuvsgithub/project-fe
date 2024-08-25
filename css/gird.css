@@ -248,6 +248,9 @@
   }
 }
 @media screen and (max-width: 767.98px) {
+  .col-md-offset-0 {
+    --col-offset-size: 0 ;
+  }
   .col-md-1 {
     --col-size: 1;
   }
