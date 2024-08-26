@@ -183,3 +183,30 @@
         }
     }
 }
+
+@include mixin.mobile-device {
+    .products {
+        .container {
+            .row {
+                .col-12 {
+                    .products-item {
+                        .row {
+                            .col-4 {
+                                .item-background-pink {
+                                    img {
+                                        width: 30vw;
+                                    }
+                                }
+                                .item-background-green {
+                                    img {
+                                        width: 30vw;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

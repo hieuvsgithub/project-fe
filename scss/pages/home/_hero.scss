@@ -30,7 +30,7 @@
                             margin-bottom: 27.67px;
                         }
                         p {
-                            width: 449.167px;
+                            max-width: 449.167px;
                             font-size: 16px;
                             line-height: 20.417px;
                             font-weight: 400;
@@ -192,7 +192,28 @@
     }
 }
 
-
+@include mixin.mobile-device {
+    .hero {
+        .wrapper-hero {
+            .container {
+                .row {
+                    .col-6 {
+                        .trademark {
+                            .wrapper-trademark {
+                                img {
+                                    width: 60vw;
+                                }
+                                h1 {
+                                    font-size: 20vw;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 // @include mixin.big-pc-device {

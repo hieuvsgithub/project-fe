@@ -365,7 +365,7 @@ h2 {
   margin-bottom: 27.67px;
 }
 .hero .wrapper-hero .container .row .col-6 .header-content-hero p {
-  width: 449.167px;
+  max-width: 449.167px;
   font-size: 16px;
   line-height: 20.417px;
   font-weight: 400;
@@ -483,6 +483,14 @@ h2 {
     position: static;
     transform: rotate(0deg);
     text-align: center;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .hero .wrapper-hero .container .row .col-6 .trademark .wrapper-trademark img {
+    width: 60vw;
+  }
+  .hero .wrapper-hero .container .row .col-6 .trademark .wrapper-trademark h1 {
+    font-size: 20vw;
   }
 }
 .achievements .container .row .col-12 {
@@ -733,6 +741,14 @@ h2 {
   .products .container .row .col-12 .products-item .row .col-4 .item-background-green::before {
     content: "";
     display: none;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .products .container .row .col-12 .products-item .row .col-4 .item-background-pink img {
+    width: 30vw;
+  }
+  .products .container .row .col-12 .products-item .row .col-4 .item-background-green img {
+    width: 30vw;
   }
 }
 .news {
