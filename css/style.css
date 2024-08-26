@@ -112,11 +112,11 @@ h2 {
 }
 .header .wrapper-header .nav ul li a:hover {
   color: var(--color-nav-hover);
-  border-bottom: 1px solid #46c20f;
+  border-bottom: 1.6px solid #46c20f;
 }
 .header .wrapper-header .nav ul li a.active {
   color: var(--color-nav-hover);
-  border-bottom: 1px solid #46c20f;
+  border-bottom: 1.6px solid #46c20f;
 }
 .header .wrapper-header .coaing {
   display: none;
@@ -343,6 +343,7 @@ h2 {
 
 .hero {
   padding-bottom: 80px;
+  position: relative;
 }
 .hero .wrapper-hero {
   display: block;
@@ -350,6 +351,7 @@ h2 {
 .hero .wrapper-hero .container .row .col-6 {
   display: flex;
   align-items: center;
+  height: 642px;
 }
 .hero .wrapper-hero .container .row .col-6 .header-content-hero h2 {
   color: var(--content);
@@ -371,11 +373,14 @@ h2 {
 .hero .wrapper-hero .container .row .col-6 .trademark {
   padding-top: 0;
   background: #ddffca;
-  height: 100%;
-  width: 100%;
+  height: 642px;
+  width: 50%;
   display: flex;
   align-items: center;
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 50%;
 }
 .hero .wrapper-hero .container .row .col-6 .trademark .wrapper-trademark {
   display: flex;
@@ -410,6 +415,7 @@ h2 {
   .hero .wrapper-hero .container .row .col-6 {
     display: flex;
     justify-content: center;
+    height: auto;
   }
   .hero .wrapper-hero .container .row .col-6 .header-content-hero {
     display: flex;
@@ -422,6 +428,12 @@ h2 {
   .hero .wrapper-hero .container .row .col-6 .trademark {
     display: flex;
     justify-content: center;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
   }
   .hero .wrapper-hero .container .row .col-6 .trademark .wrapper-trademark {
     display: flex;

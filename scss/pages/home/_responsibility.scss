@@ -104,7 +104,7 @@
                                     min-height: 400px;
                                 }
                                 &.center-lg {
-                                    margin-left: 100% / 12 * 3;
+                                    margin-left: calc(100% / 12 * 3);
                                     
                                 }
                             }

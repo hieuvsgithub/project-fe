@@ -7,7 +7,7 @@
 }
 .hero {
     padding-bottom: 80px;
-
+    position: relative;
     .wrapper-hero {
         display: block;
         .container {
@@ -15,6 +15,7 @@
                 .col-6 {
                     display: flex;
                     align-items: center;
+                    height: 642px;
                     .header-content-hero {
                         
                         h2 {
@@ -38,11 +39,14 @@
                     .trademark {
                         padding-top: 0;
                         background: #ddffca;
-                        height: 100%;
-                        width: 100%;
+                        height: 642px;
+                        width: 50%;
                         display: flex;
                         align-items: center;
-                        position: relative;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        left: 50%;
                         .wrapper-trademark  {
                             display: flex;
                             height: 100%;
@@ -101,6 +105,7 @@
                     .col-6 {
                         display: flex;
                         justify-content: center;
+                        height: auto;
                         .header-content-hero {
                             display: flex;
                             flex-direction: column;
@@ -112,7 +117,12 @@
                         .trademark {
                             display: flex;
                             justify-content: center;
-
+                            height: auto;
+                            position: relative;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            width: 100%;
                             .wrapper-trademark {
                                 display: flex;
                                 justify-content: center;
