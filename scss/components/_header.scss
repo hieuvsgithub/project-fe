@@ -12,7 +12,7 @@
         align-items: center;
         max-width: 1200px;
         margin: 0 auto;
-        padding: 10px ;
+        padding: 0 10px ;
 
 
         .logo {
@@ -21,6 +21,9 @@
         }
 
         .nav {
+            height: 90px;
+            display: flex;
+            align-items: center;
             .nav-logo {
                 display: none;
             }
@@ -29,8 +32,10 @@
 
                 li {
                     margin: 10px;
+                    display: inline-block;
+                    height: 100%;
                     a {
-                        padding: 10px;
+                        padding: 34px 10px;
                         font-family: "Inter";
                         font-size: 16.67px;
                         font-style: normal;
@@ -38,12 +43,15 @@
                         color: var(--color-nav);
                         font-weight: 600;
                         
+                        
                         &:hover {
                             color: var(--color-nav-hover);
+                            border-bottom: 1px solid #46c20f;
                         }
 
                         &.active {
                             color: var(--color-nav-hover);
+                            border-bottom: 1px solid #46c20f;
                         }
                     }
                     
@@ -131,11 +139,13 @@
                 left: 0;
                 bottom: 0;
                 background: #fff;
-                width: 20%;
+                width: 30%;
                 padding: 20px;
                 z-index: 99;
                 transform: translateX(-100%);
                 transition: transform 0.5s ease;
+                display: block;
+                height: auto;
                 .nav-logo {
                     display: block;
     
@@ -143,6 +153,12 @@
                         display: inline-block;
                         width: 80px;
                         height: 55px;
+                        &:hover {
+                            border: none;
+                        }
+                        &.active {
+                            border: none;
+                        }
                         img {
                             width: 100%;
     
@@ -153,6 +169,17 @@
                 ul {
                     flex-direction: column;
                     margin-top: 20px;
+                    li {
+                        a {
+                            padding: 10px;
+                            &:hover {
+                                border: none;
+                            }
+                            &.active {
+                                border: none;
+                            }
+                        }
+                    }
                 }
             }
             .coaing {

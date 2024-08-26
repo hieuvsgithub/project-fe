@@ -1,0 +1,118 @@
+@use "../../partials/fonts";
+@use "../../partials/mixin";
+
+.news {
+    padding-top: 80px;
+    .container {
+        .row {
+            .col-12 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-left: 5px;
+                .news-header {
+                    text-align: center;
+                    max-width: 650px;
+                    h2 {
+                        font-size: 31px;
+                    }
+                    p {
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: #2c2c2c;
+                        margin: 40px 0 20px 0;
+                    }
+                }
+                .news-item {
+                    .row {
+                        .col-4 {
+                            
+                            .item {
+                                color: #2c2c2c;
+                                a {
+                                    img {
+                                        width: 100%;
+                                    }
+                                }
+                                .information {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    margin: 20px 0;
+                                    span {
+                                        color: #46b20f;
+                                        font-size: 15px;
+                                        font-weight: 500;
+                                    }
+                                    time {
+                                        color: #a3a3a3;
+
+                                        i {
+                                            margin-right: 5px;
+                                        }
+                                    }
+                                }
+                                h3 {
+                                    a {
+                                        font-size: 20px;
+                                        font-weight: 600;
+                                        margin-bottom: 20px;
+                                        color: #2c2c2c;
+                                        transition: color 0.4s ease;
+                                        &:hover {
+                                            color: #46B20F;
+                                        } 
+                                    }
+                                }
+                                p {
+                                    font-size: 16px;
+
+                                }
+                            }
+                        }
+                    }
+                }
+                .btn-see-more {
+                    font-size: 16px;
+                    font-weight: 700;
+                    padding: 15px 30px;
+                    border: 1px solid #86b20f;
+                    border-radius: 8px;
+                    margin: 40px;
+                    transition: background-color 0.5s ease;
+                    &:hover {
+                        background-color: #46B20F;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include mixin.pc-device {
+    .news {
+        .container {
+            padding: 0 10px;
+            
+        }
+    }
+}
+
+@include mixin.tablet-device {
+    .news {
+        .container {
+            .row {
+                .col-md-12 {
+                    .item {
+                        p {
+                            margin-bottom: 30px;
+                        }
+                    }
+                    .btn-see-more {
+                        margin: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

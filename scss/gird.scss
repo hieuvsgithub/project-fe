@@ -185,6 +185,12 @@
 }
 
 @media screen and (max-width : 991.98px) {
+    .col-lg-offset-0 {
+        --col-offset-size: 0 ;
+    }
+    .col-lg-offset-1 {
+        --col-offset-size: 1 ;
+    }
     .col-lg-1 {
         --col-size : 1;
     }

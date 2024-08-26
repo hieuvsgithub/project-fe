@@ -1,0 +1,142 @@
+@use "../partials/fonts";
+@use "../partials/mixin"; 
+
+.footer {
+    padding: 60px 0;
+    background: #F2FFEC;
+    .container {
+        .row {
+            border-bottom: 1.667px solid #A3A3A3;
+            .col-3 {
+                .item {
+                    img {
+                        width: 132px;
+                    }
+                    p {
+                        font-size: 13px;
+                        line-height: 20px;
+                        
+                    }
+                    &.item-home {
+                        a {
+                            color: #46b20f;
+                            font-size: 16px;
+                            font-weight: 600;
+                            line-height: 21px;
+                            margin-bottom: 13px;
+                        }
+                        ul {
+                            li {
+                                a {
+                                    color: #2c2c2c;
+                                    font-weight: 400;
+                                    &:hover {
+                                        font-size: 18px;
+                                    }
+                                    &:active {
+                                        font-size: 18px;
+                                        color: #46b20f;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.item-support {
+                        a {
+                            color: #46b20f;
+                            font-size: 16px;
+                            font-weight: 600;
+                            line-height: 21px;
+                            margin-bottom: 13px;
+                        }
+                        p {
+
+                        }
+                        ul {
+                            li {
+                                color: #2c2c2c;
+                                font-weight: 400;
+                                display: flex;
+                                align-items: center;
+                                gap: 10px;
+                                img {
+                                    width: 20px;
+                                }
+                                
+                            }
+                        }
+                    }
+                    &.item-contact {
+                        a {
+                            color: #46b20f;
+                            font-size: 16px;
+                            font-weight: 600;
+                            line-height: 21px;
+                            margin-bottom: 13px;
+                        }
+                        ul {
+                            li {
+                                a {
+                                    color: #2c2c2c;
+                                    font-weight: 400;
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 10px;
+                                    margin: 0;
+                                    img {
+                                        width: 20px;
+                                    }
+                                    &:hover {
+                                        font-size: 18px;
+                                    }
+                                }   
+                            }
+                        }
+                    }
+                }
+            }
+            &.row-bottom {
+                border: none;
+                margin-top: 24px;
+                .col-12 {
+                    .item {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        
+                        .Notarization {
+                            img {
+                                height: 67px;
+                            }
+                        }
+                        .external-links {
+                            ul {
+                                display: flex;
+                                
+                                li {
+                                    a {
+                                        color: #2c2c2c;
+                                        i {
+                                            font-size: 20px;
+                                            padding: 10px;
+                                            background: #dcffca;
+                                            border-radius: 50%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include mixin.pc-device {
+    .footer {
+        .container {
+            padding-left: 10px;
+        }
+    }
+}
