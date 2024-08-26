@@ -140,3 +140,20 @@
         }
     }
 }
+
+@include mixin.mobile-device {
+    .footer {
+        .container {
+            .row {
+                &.row-bottom {
+                    .col-12 {
+                        .item {
+                            flex-direction: column;
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

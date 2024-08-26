@@ -337,6 +337,12 @@ h2 {
     padding-left: 10px;
   }
 }
+@media screen and (max-width: 575.98px) {
+  .footer .container .row.row-bottom .col-12 .item {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 :root {
   --content: #2c2c2c;
 }
@@ -361,7 +367,7 @@ h2 {
   font-size: 43.333px;
   font-weight: 800;
   text-transform: uppercase;
-  width: 370px;
+  max-width: 370px;
   margin-bottom: 27.67px;
 }
 .hero .wrapper-hero .container .row .col-6 .header-content-hero p {
